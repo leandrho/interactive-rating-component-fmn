@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  
+  <main class="container">
+    <!-- Rating state start -->
+    <section class="state statetop">
+      <div class="state__icon"><img src="./images/icon-star.svg" alt=""></div>
+      <div class="state__container">
+            <h1 class="state__title">How did we do?</h1>
+            <p class="state__paragraph">
+              Please let us know how we did with your support request. All feedback is appreciated 
+              to help us improve our offering!
+            </p>
+          
+            <form class="form">
+                <div class="rate__list">
+                  <input type="radio" id="one" name="rating" value="1">
+                  <label for="one">1</label>
+                  <input type="radio" id="two" name="rating" value="2">
+                  <label for="two">2</label>
+                  <input type="radio" id="three" name="rating" value="3">
+                  <label for="three">3</label>
+                  <input type="radio" id="four" name="rating" value="4">
+                  <label for="four">4</label>
+                  <input type="radio" id="five" name="rating" value="5">
+                  <label for="five">5</label>
+                </div>
+                <input type="submit" class="btn__submit"></inpuy>
+            </form>
+           
+      </div>
+    </section>
+    <!-- Rating state end -->
+
+    <!-- Thank you state start -->
+      <section class="state thanks hidden">
+        <div class="top">
+          <figure class="thanks__img">
+            <img src="./images/illustration-thank-you.svg" alt="">
+          </figure>
+          
+          <p class="thanks__selection-text">You selected <span class="rate__selected"></span> out of 5</p>
+        </div>
+        <div class="bottom">
+          <h2 class="thanks_thanks">Thank you!</h2>
+          <p class="thanks__description">
+              We appreciate you taking the time to give a rating. If you ever need more support, 
+              don’t hesitate to get in touch!
+          </p>
+        </div>
+        
+      </section>
+  <!-- Thank you state end -->
+
+  </main>
+  
+  <script src="./scripts.js"></script>
+
+
+  
+</body>
+</html>
